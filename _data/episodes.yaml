@@ -1,0 +1,29 @@
+seasons:
+  - id: 1
+    name: "Season 1: 2020/2021"
+    episodes:
+      - name: "Episode 1"
+        poster: img/episodes/s01e01.png
+        guest: Champion
+        date: 01-01-2020
+      - name: "Episode 2..."
+        poster: img/episodes/s01e02.png
+        guest: Fintas
+        date: 01-01-2020
+      - name: "Episode 3.."
+        poster: img/episodes/s01e03.png
+        guest: abcd
+        date: 01-01-2020
+      - name: "Episode 4"
+        poster: img/episodes/s01e04.png
+        guest: efgh
+        date: 01-01-2020
+  - id: 2
+    name: "Season 2: 2021/2022"
+    episodes:
+      - name: "O regresso"
+        poster: img/episodes/s01e06.png
+        guest: Random
+      - name: "Mais um.."
+        poster: img/episodes/s01e05.png
+        guest: Pimenta

@@ -1,0 +1,33 @@
+---
+layout: default
+title: The Big Nel Show - Episodes
+---
+<section class="page-section" id="manifesto-init" style="padding-bottom: 50px;padding-top: 120px">
+    <div class="container">
+        <h2>The Big Nel Show - Episodes</h2>
+        <div class="mt-5" id="accordion">
+            {% for season in site.data.episodes.seasons %}
+            <div class="card mb-3">
+                <div class="card-header">
+                    <a class="card-link collapsed" data-toggle="collapse" href="#collapse{{season.id}}"
+                       style="color: #0B0A0D; font-size: 1.1rem;">
+                        <b>{{ season.name }}</b>
+                    </a>
+                </div>
+                <div class="collapse" data-parent="#accordion" id="collapse{{season.id}}">
+                    <div class="card-body" style="text-align: center;">
+                        {% for e in season.episodes %}
+                        <div class="episode">
+                            <img alt="" class="mx-auto" src="{{ e.poster }}">
+                            <br>
+                            <h6>{{ e.name }}</h6>
+                            <h8 style="color: #6c757d">{{ e.guest }}</h8>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

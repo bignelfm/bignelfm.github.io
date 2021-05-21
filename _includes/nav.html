@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger ml-auto" href="/" style="font-size:100%">
+            <img hspace="10" src="{{ site.baseurl }}/{{ site.data.nav.logo }}" width="10%"/>
+            {{ site.data.nav.title }}
+        </a>
+        <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-toggle="collapse"
+                type="button">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ml-auto">
+                {% for link in site.data.nav.links %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ site.baseurl }}/{{ link.url }}"> {{ link.title }} </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</nav>

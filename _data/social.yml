@@ -1,0 +1,10 @@
+networks:
+  - name: facebook
+    icon: fa-facebook-f
+    url: https://www.facebook.com/
+  - name: instagram
+    icon: fa-instagram
+    url: https://www.instagram.com/
+links:
+  - name: Anybrain
+    url: https://anybrain.gg
